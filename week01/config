@@ -1,0 +1,12 @@
+Host 10.0.9.66
+    Ciphers aes256-cbc,aes256-ctr
+    HashKnownHosts yes
+    Compression yes
+    SendEnv LC_*
+
+Host compbio.unist.ac.kr
+    Ciphers aes256-cbc,aes256-ctr
+    HashKnownHosts yes
+    Compression yes
+    SendEnv LC_*
+    ProxyJump bme282@10.0.9.66:3030
