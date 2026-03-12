@@ -1,0 +1,2 @@
+#!/bin/bash
+/BiO/Share/Tools/gatk-4.6.1.0/gatk MarkDuplicatesSpark --input /BiO/Live/jwlee230/BME424/week02/PS-826-B_DNA.Sort.bam --output /BiO/Live/jwlee230/BME424/week02/PS-826-B_DNA.Sort.MarkDuplicates.bam --reference /BiO/Share/Tools/gatk-bundle/hg38/Homo_sapiens_assembly38.fasta --metrics-file /BiO/Live/jwlee230/BME424/week02/PS-826-B_DNA.Sort.MarkDuplicates.metrics --duplicate-tagging-policy 'OpticalOnly' -- --spark-master 'local[10]' --spark-verbosity 'INFO'

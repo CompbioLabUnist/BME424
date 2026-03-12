@@ -1,0 +1,2 @@
+#!/bin/bash
+/BiO/Share/Tools/bwa-0.7.18/bwa mem -M -t 10 -R '@RG\tID:PS-826-T_DNA\tPL:ILLUMINA\tLB:PS-826-T_DNA\tSM:PS-826-T_DNA\tCN:UNIST' -v 3 /BiO/Share/Tools/gatk-bundle/hg38/Homo_sapiens_assembly38.fasta /BiO/Teach/BME42401/Data/PS-826-T_DNA_1.fastq.gz /BiO/Teach/BME42401/Data/PS-826-T_DNA_2.fastq.gz | /BiO/Share/Tools/samtools-1.21/samtools view --bam --with-header --threads 10 --reference /BiO/Share/Tools/gatk-bundle/hg38/Homo_sapiens_assembly38.fasta --output /BiO/Live/jwlee230/BME424/week02/PS-826-T_DNA.bam
