@@ -34,6 +34,7 @@ class PipelineManagerBase:
         with open(f"{self.output_dir}/sh/{script_name}_{self.name}.sh", "w") as sh:
             sh.write("#!/bin/bash\n")
             sh.write(command)
+            sh.write("\n")
 
     def submit_job(self, script_name, dependency_id: str | None = None, cpus: int | None = None):
         if self.dryrun:
