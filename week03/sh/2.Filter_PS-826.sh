@@ -1,0 +1,2 @@
+#!/bin/bash
+/BiO/Share/Tools/gatk-4.6.1.0/gatk FilterMutectCalls --java-options "-XX:+UseSerialGC -Xmx20g" --reference /BiO/Share/Tools/gatk-bundle/hg38/Homo_sapiens_assembly38.fasta --variant /BiO/Live/jwlee230/BME424/week03/PS-826.vcf --output /BiO/Live/jwlee230/BME424/week03/PS-826.filter.vcf

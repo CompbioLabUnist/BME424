@@ -1,0 +1,2 @@
+#!/bin/bash
+/BiO/Share/Tools/gatk-4.6.1.0/gatk Mutect2 --java-options "-XX:+UseSerialGC -Xmx20g" --reference /BiO/Share/Tools/gatk-bundle/hg38/Homo_sapiens_assembly38.fasta --input /BiO/Live/jwlee230/BME424/week02/PS-826-B_DNA.Sort.MarkDuplicates.BQSR.bam --input /BiO/Live/jwlee230/BME424/week02/PS-826-T_DNA.Sort.MarkDuplicates.BQSR.bam --normal-sample PS-826-B_DNA  --output /BiO/Live/jwlee230/BME424/week03/PS-826.vcf --native-pair-hmm-threads 10 --max-mnp-distance 0

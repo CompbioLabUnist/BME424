@@ -1,0 +1,2 @@
+#!/bin/bash
+/usr/bin/perl /BiO/Share/Tools/vcf2maf-1.6.21/vcf2maf.pl --vep-path /BiO/Share/Tools/ensembl-vep-release-110.1/ --vep-data /BiO/Share/Tools/ensembl-vep-release-110.1/ --vep-forks 10 --ncbi-build 'GRCh38' --input-vcf /BiO/Live/jwlee230/BME424/week03/PS-826.PASS.vcf --output /BiO/Live/jwlee230/BME424/week03/PS-826.PASS.maf --tumor-id PS-826-T_DNA --normal-id PS-826-B_DNA --ref-fasta /BiO/Share/Tools/gatk-bundle/hg38/Homo_sapiens_assembly38.fasta --vep-overwrite

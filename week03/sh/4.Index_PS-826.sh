@@ -1,0 +1,2 @@
+#!/bin/bash
+/BiO/Share/Tools/gatk-4.6.1.0/gatk IndexFeatureFile --java-options "-XX:+UseSerialGC -Xmx20g" --input /BiO/Live/jwlee230/BME424/week03/PS-826.PASS.vcf --output /BiO/Live/jwlee230/BME424/week03/PS-826.PASS.vcf.idx
