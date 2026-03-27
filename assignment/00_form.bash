@@ -1,8 +1,8 @@
 #!/bin/bash
 #SBATCH --chdir=.
 #SBATCH --cpus-per-task=10
-#SBATCH --error=$HOME/BME424/assignment/stdeo/%x-%A.txt
-#SBATCH --output=$HOME/BME424/assignment/stdeo/%x-%A.txt
+#SBATCH --error=./stdeo/%x-%A.txt
+#SBATCH --output=./stdeo/%x-%A.txt
 #SBATCH --job-name=BME424-00_form
 #SBATCH --mem=20G
 #SBATCH --export=ALL
