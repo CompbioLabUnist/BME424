@@ -12,6 +12,6 @@
 SigProfilerMatrixGenerator matrix_generator --exome --output_directory "$(realpath .)" Signatures 'GRCh38' "$(realpath .)"
 SigProfilerExtractor sigprofilerextractor --reference_genome 'GRCh38' --exome --cpu 10 --assignment_cpu 10 'vcf' "$(realpath .)" "$(realpath .)"
 rm -rfv "$(realpath Plot)"
-SigProfilerPlotting plotSBS --savefig_format 'png' --dpi 600 "$(realpath ./output/SBS/PS-826.SBS96.exome)" "$(realpath Plot)" 'PS-826' '96'
-SigProfilerPlotting plotSBS --savefig_format 'png' --dpi 600 "$(realpath ./output/SBS/PS-826.SBS6.exome)" "$(realpath Plot)" 'PS-826' '6'
-SigProfilerPlotting plotDBS --savefig_format 'png' --dpi 600 "$(realpath ./output/DBS/PS-826.DBS78.exome)" "$(realpath Plot)" 'PS-826' '78'
+SigProfilerPlotting plotSBS --savefig_format 'png' --dpi 600 "$(realpath ./output/SBS/week07.SBS96.exome)" "$(realpath Plot/)" 'week07' '96' && mv -v PlotSBS_96_plots_PS-826.png Plot/SBS_96_plots_PS-826.png
+SigProfilerPlotting plotSBS --savefig_format 'png' --dpi 600 "$(realpath ./output/SBS/week07.SBS6.exome)" "$(realpath Plot/)" 'week07' '6'
+SigProfilerPlotting plotDBS --savefig_format 'png' --dpi 600 "$(realpath ./output/DBS/week07.DBS78.exome)" "$(realpath Plot/)" 'week07' '78' && mv -v PlotDBS_78_plots_PS-826.png Plot/DBS_78_plots_PS-826.png
