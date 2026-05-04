@@ -3,7 +3,7 @@
 #SBATCH --cpus-per-task=10
 #SBATCH --error=./stdeo/%x-%A.txt
 #SBATCH --output=./stdeo/%x-%A.txt
-#SBATCH --job-name=BME424-00_form
+#SBATCH --job-name=BME424-03_rainfall
 #SBATCH --mem=20G
 #SBATCH --export=ALL
 #SBATCH --mail-type=FAIL
